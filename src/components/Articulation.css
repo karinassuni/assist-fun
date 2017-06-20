@@ -1,0 +1,29 @@
+.articulation {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.articulation > h2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+
+.articulation > hr {
+  border: 1px dashed lightgrey;
+}
+
+
+.articulation > p {
+  white-space: pre-wrap;
+  font-size: 0.9em;
+}
+
+
+@media (max-width: 600px) {
+  .articulation {
+    width: 100%;
+  }
+}

@@ -1,4 +1,5 @@
 import CourseSection from '@/components/CourseSection'
+import '@/components/Articulation.css'
 
 export default function(articulation) {
   return {
