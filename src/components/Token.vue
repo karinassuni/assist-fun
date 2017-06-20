@@ -125,10 +125,10 @@ export default {
 
 
 .operator {
-  margin-left: 1.5em;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  font-size: 0.75em;
+  margin-left: 2.0em;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  font-size: 0.5em;
 }
 .to-operator {
   text-align: center;
@@ -143,6 +143,9 @@ export default {
 }
 
 
+.blank {
+  height: 0;
+}
 @media (max-width: 500px) {
   .course {
     align-items: center;
