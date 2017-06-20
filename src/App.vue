@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Articulation from '@/components/Articulation'
+import Articulation from '@/components/articulation/Articulation'
 import articulation from '@/articulation.json'
 
 export default {

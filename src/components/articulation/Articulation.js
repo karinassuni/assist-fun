@@ -1,5 +1,5 @@
-import CourseSection from '@/components/CourseSection'
-import '@/components/Articulation.css'
+import CourseSection from '@/components/articulation/CourseSection'
+import '@/components/articulation/Articulation.css'
 
 export default function(articulation) {
   return {

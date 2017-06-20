@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Token from '@/components/Token'
+import Token from '@/components/articulation/tokens/Token'
 
 export default {
   name: 'course-section',
