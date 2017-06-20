@@ -21,9 +21,6 @@
     <template v-else-if="isNonCourse()">
       <div class="non-course">{{ token['non-course'] }}</div>
     </template>
-    <template v-else-if="isBlank()">
-      <div class="blank">&nbsp;</div>
-    </template>
   </td>
 </template>
 
@@ -44,9 +41,6 @@ export default {
     },
     isNonCourse() {
       return this.token.hasOwnProperty('non-course')
-    },
-    isBlank() {
-      return this.token.hasOwnProperty('blank')
     },
 
 
@@ -143,9 +137,6 @@ export default {
 }
 
 
-.blank {
-  height: 0;
-}
 @media (max-width: 500px) {
   .course {
     align-items: center;
