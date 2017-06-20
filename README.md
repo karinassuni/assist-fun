@@ -1,21 +1,12 @@
-# assist-fun
+# ASSIST.fun
 
-> ASSIST.org, but fun to use
+> [ASSIST.org](www.assist.org/web-assist/welcome.html),
+but for all screen sizes and with added utility. (Plus, semantic HTML!)
 
-## Build Setup
+ISN'T THAT FUN?
 
-``` bash
-# install dependencies
-npm install
+## Server-side components
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- [assistscraper](https://github.com/karinassuni/assistscraper)
+- [assisttemplater](https://github.com/karinassuni/assisttemplater)
+- [assistconsolidator](https://github.com/karinassuni/assistconsolidator)
