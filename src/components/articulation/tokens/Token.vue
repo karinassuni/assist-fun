@@ -40,8 +40,6 @@ export default {
 
 <style>
 .token {
-  width: 50%;
-  max-width: 800px;
   vertical-align: top;
 }
 
@@ -51,13 +49,5 @@ export default {
   margin-bottom: 0.25em;
   padding: 6px;
   font-size: 0.8em;
-}
-
-
-@media (max-width: 300px) {
-  .token {
-    width: 50%;
-    min-width: 160px;
-  }
 }
 </style>

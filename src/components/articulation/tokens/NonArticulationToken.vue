@@ -13,10 +13,13 @@ export default {
 
 <style>
 .non-articulation {
-  padding: 6px;
-  background-color: #efefef;
-  border-radius: 5px;
   font-size: 0.85em;
+  padding: 6px 0.65em 6px 0.65em;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 7px -6px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 4px 7px -6px rgba(0,0,0,0.7);
+  box-shadow: 0px 4px 7px -6px rgba(0,0,0,0.7);
 }
 
 .non-articulation-large {

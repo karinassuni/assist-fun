@@ -30,7 +30,9 @@ export default {
 <style>
 .operator {
   margin-left: 3.0em;
-  font-size: 0.7em;
+  font-size: 0.75em;
+  padding-top: calc(4px + 1px);
+  padding-bottom: 1px;
 }
 
 .to-operator {
