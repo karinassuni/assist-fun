@@ -1,6 +1,6 @@
 <template>
   <td class="token">
-    <course-token :course="token" v-if="isCourse()"/>
+    <course-token :course="token" :onFromSide="onFromSide" v-if="isCourse()"/>
     <non-articulation-token v-else-if="isNonArticulation()"/>
     <operator-token :operator_="token" v-else-if="isOperator()"/>
     <div class="non-course" v-else-if="isNonCourse()">
@@ -16,7 +16,7 @@ import OperatorToken from '@/components/articulation/tokens/OperatorToken'
 
 export default {
   name: 'token',
-  props: ['token'],
+  props: ['token', 'onFromSide'],
   methods: {
     isCourse() {
       return this.token.hasOwnProperty('code')

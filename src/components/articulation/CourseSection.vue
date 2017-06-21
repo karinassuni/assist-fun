@@ -9,8 +9,8 @@
     <tbody>
       <template v-for="tokenPair of zippedSection">
         <tr>
-          <token :token="tokenPair[0]"/>
-          <token :token="tokenPair[1]"/>
+          <token :token="tokenPair[0]" :onFromSide="false"/>
+          <token :token="tokenPair[1]" :onFromSide="true"/>
         </tr>
       </template>
     </tbody>
