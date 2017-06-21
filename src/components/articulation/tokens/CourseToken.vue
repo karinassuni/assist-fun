@@ -31,13 +31,13 @@ export default {
   padding: 6px;
   background-color: #efefef;
   border-radius: 5px;
-  font-size: 0.75em;
 }
 
 .code {
   display: flex;
   flex-direction: row;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: 900;
   margin-right: 1.25em;
 }
 
@@ -46,6 +46,7 @@ export default {
 }
 
 .title {
+  font-size: 0.85em;
 }
 
 
@@ -68,6 +69,7 @@ export default {
   }
 
   .code {
+    margin-right: 0;
     flex-direction: row;
   }
 

@@ -16,8 +16,7 @@ export default {
   padding: 6px;
   background-color: #efefef;
   border-radius: 5px;
-  font-size: 0.75em;
-  font-weight: bold;
+  font-size: 0.85em;
 }
 
 .non-articulation-large {

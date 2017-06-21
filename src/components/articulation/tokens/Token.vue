@@ -50,7 +50,7 @@ export default {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   padding: 6px;
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
 

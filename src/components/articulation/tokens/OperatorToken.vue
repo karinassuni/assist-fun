@@ -29,14 +29,19 @@ export default {
 
 <style>
 .operator {
-  margin-left: 2.0em;
-  margin-top: 0.0em;
-  margin-bottom: 0.0em;
-  font-size: 0.5em;
+  margin-left: 3.0em;
+  font-size: 0.7em;
 }
 
 .to-operator {
   text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .operator {
+    margin-left: 1.25em;
+  }
 }
 
 
