@@ -1,5 +1,11 @@
 <template>
   <table class="course-section">
+    <thead class="accessibility-info">
+      <tr>
+        <th>To Institution Courses</th>
+        <th>From Institution Courses</th>
+      </tr>
+    </thead>
     <tbody>
       <template v-for="tokenPair of zippedSection">
         <tr>
@@ -62,5 +68,9 @@ export default {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   table-layout: fixed;
+}
+
+.accessibility-info {
+  display: none;
 }
 </style>
