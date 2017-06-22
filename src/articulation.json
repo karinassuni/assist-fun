@@ -26,7 +26,7 @@
         [
             [
                 {
-                    "non-course": "2.a. Literature\n(Select one (1) of the following courses\nas a prerequisite to upper division\nliterature coures.)"
+                    "non-course": "2.a. Literature (Select one (1) of the following courses as a prerequisite to upper division literature coures.)"
                 },
                 {
                     "code": "ENGL 1208",
@@ -76,7 +76,7 @@
             ],
             [
                 {
-                    "non-course": "2.a. Literature\n(Select one (1) of the following\ncourses as a prerequisite to upper\ndivision literature coures.)"
+                    "non-course": "2.a. Literature (Select one (1) of the following courses as a prerequisite to upper division literature coures.)"
                 },
                 {
                     "code": "ENGL 102",
@@ -346,7 +346,7 @@
         [
             [
                 {
-                    "non-course": "3.a. Cultural Geography\n(SOC 3300 & PLSI 3370 are upper division\ncourses. Students who complete an\narticulated course at community college\nwill receive lower division credit\nonly.)\n"
+                    "non-course": "3.a. Cultural Geography (SOC 3300 & PLSI 3370 are upper division courses. Students who complete an articulated course at community college will receive lower division credit only.) "
                 }
             ],
             [
@@ -503,7 +503,7 @@
         [
             [
                 {
-                    "non-course": "1.a. Elective Courses\n(LBST 3300 is an upper division course.\nStudents who complete an articulated\ncourse at a community collect will\nreceive lower division credit\nonly.)"
+                    "non-course": "1.a. Elective Courses (LBST 3300 is an upper division course. Students who complete an articulated course at a community collect will receive lower division credit only.)"
                 },
                 {
                     "code": "CMPS 1200",

@@ -20,6 +20,19 @@
 <script>
 import Token from '@/components/articulation/tokens/Token'
 
+// assertion: tokens only have one key
+const keyOf = obj => Object.keys(obj)[0]
+const valueOf = obj => obj[keyOf(obj)]
+
+const tokensAreEqual = (token, other) => {
+  if (keyOf(token) === keyOf(other)) {
+    return valueOf(token) === valueOf(other)
+  }
+  else {
+    return false
+  }
+}
+
 export default {
   name: 'course-section',
   props: ['section'],
@@ -43,9 +56,18 @@ export default {
       const longerSectionLength = longerSection.length
       const shorterSectionLength = shorterSection.length
       const blankToken = {'blank': null}
+
       for (let i = 0; i < longerSectionLength; ++i) {
         if (i < shorterSectionLength) {
-          zipped.push([toSection[i], fromSection[i]])
+          const toToken = toSection[i]
+          const fromToken = fromSection[i]
+
+          if (keyOf(toToken) === 'non-course' && tokensAreEqual(toToken, fromToken)) {
+            zipped.push([blankToken, fromToken])
+          }
+          else {
+            zipped.push([toToken, fromToken])
+          }
         }
         else if (longerSection === toSection) {
           zipped.push([toSection[i], blankToken])
