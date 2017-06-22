@@ -3,8 +3,8 @@
     <course-token :course="token" :onFromSide="onFromSide" v-if="isCourse()"/>
     <non-articulation-token v-else-if="isNonArticulation()"/>
     <operator-token :operator_="token" :onFromSide="onFromSide" v-else-if="isOperator()"/>
-    <div class="non-course" v-else-if="isNonCourse()">
-      {{ token['non-course'] }}
+    <div class="info" v-else-if="isInfo()">
+      {{ token['info'] }}
     </div>
   </div>
 </template>
@@ -19,17 +19,16 @@ export default {
   props: ['token', 'onFromSide'],
   methods: {
     isCourse() {
-      return this.token.hasOwnProperty('code')
-        && this.token.code !== "No Course Articulated"
+      return this.token.hasOwnProperty('department')
     },
     isNonArticulation() {
-      return this.token.code === "No Course Articulated"
+      return this.token.hasOwnProperty('no-articulation')
     },
     isOperator() {
       return this.token.hasOwnProperty('operator')
     },
-    isNonCourse() {
-      return this.token.hasOwnProperty('non-course')
+    isInfo() {
+      return this.token.hasOwnProperty('info')
     },
   },
   components: {
@@ -39,7 +38,7 @@ export default {
 </script>
 
 <style>
-.non-course {
+.info {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   padding: 6px;

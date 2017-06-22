@@ -66,7 +66,7 @@ export default {
           const toToken = toSection[i]
           const fromToken = fromSection[i]
 
-          if (keyOf(toToken) === 'non-course' && tokensAreEqual(toToken, fromToken)) {
+          if (keyOf(toToken) === 'info' && tokensAreEqual(toToken, fromToken)) {
             zipped.push([blankToken, fromToken])
           }
           else {

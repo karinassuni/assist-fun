@@ -1,8 +1,8 @@
 <template>
   <div :class="['course', { 'button-box': onFromSide }]">
     <div :class="['code', onFromSide ? 'from-code' : 'to-code']">
-      <div class="department">{{ department }}</div>
-      <div class="course-number">{{ courseNumber }}</div>
+      <div class="department">{{ course.department }}</div>
+      <div class="course-number">{{ course.cnum }}</div>
     </div>
     <div class="title" v-if="onFromSide">{{ course.title }}</div>
   </div>
@@ -12,16 +12,6 @@
 export default {
   name: 'course-token',
   props: ['course', 'onFromSide'],
-  computed: {
-    department() {
-      const department = /([^\d]+) \d+[A-Z]*/
-      return department.exec(this.course.code)[1]
-    },
-    courseNumber() {
-      const courseNumber = /[^\d]+ (\d+[A-Z]*)/
-      return courseNumber.exec(this.course.code)[1]
-    },
-  }
 }
 </script>
 
