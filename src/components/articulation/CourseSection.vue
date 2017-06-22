@@ -102,6 +102,8 @@ export default {
 
 .to-token {
   width: 130px;
+  font-size: 0.85em;
+  color: #aaa;
 }
 
 
