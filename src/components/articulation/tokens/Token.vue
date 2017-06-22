@@ -1,5 +1,5 @@
 <template>
-  <td class="token">
+  <td :class="['token', { 'to-token': !onFromSide }]">
     <course-token :course="token" :onFromSide="onFromSide" v-if="isCourse()"/>
     <non-articulation-token v-else-if="isNonArticulation()"/>
     <operator-token :operator_="token" v-else-if="isOperator()"/>
@@ -41,6 +41,10 @@ export default {
 <style>
 .token {
   vertical-align: top;
+}
+
+.to-token {
+  width: 130px;
 }
 
 

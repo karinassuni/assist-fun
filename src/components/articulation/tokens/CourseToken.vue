@@ -1,10 +1,10 @@
 <template>
   <div :class="['course', { 'button-box': onFromSide }]">
-    <div class="code">
+    <div :class="onFromSide ? 'from-code' : 'to-code'">
       <div class="department">{{ department }}</div>
       <div class="course-number">{{ courseNumber }}</div>
     </div>
-    <div class="title">{{ course.title }}</div>
+    <div class="title" v-if="onFromSide">{{ course.title }}</div>
   </div>
 </template>
 
@@ -49,7 +49,13 @@ export default {
   transition: background-color 0.3s;
 }
 
-.code {
+.to-code {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+}
+
+.from-code {
   display: flex;
   flex-direction: row;
   font-size: 0.8em;
@@ -71,7 +77,11 @@ export default {
     align-items: center;
   }
 
-  .code {
+  .to-code {
+    flex-direction: column;
+  }
+
+  .from-code {
     margin-right: 1em;
     flex-direction: column;
     align-items: left;
@@ -84,7 +94,11 @@ export default {
     justify-content: center;
   }
 
-  .code {
+  .to-code {
+    flex-direction: row;
+  }
+
+  .from-code {
     margin-right: 0;
     flex-direction: row;
   }
