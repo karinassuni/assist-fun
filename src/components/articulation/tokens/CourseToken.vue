@@ -1,6 +1,6 @@
 <template>
   <div :class="['course', { 'button-box': onFromSide }]">
-    <div :class="onFromSide ? 'from-code' : 'to-code'">
+    <div :class="['code', onFromSide ? 'from-code' : 'to-code']">
       <div class="department">{{ department }}</div>
       <div class="course-number">{{ courseNumber }}</div>
     </div>
@@ -28,6 +28,7 @@ export default {
 <style>
 .course {
   display: flex;
+  align-items: center;
   padding: 6px 0.65em 6px 0.65em;
 }
 
@@ -49,19 +50,21 @@ export default {
   transition: background-color 0.3s;
 }
 
-.to-code {
+
+.code {
   display: flex;
   flex-direction: row;
   font-size: 0.8em;
 }
 
+.to-code {
+}
+
 .from-code {
-  display: flex;
-  flex-direction: row;
-  font-size: 0.8em;
   font-weight: 900;
   margin-right: 1.25em;
 }
+
 
 .department {
   margin-right: 3px;
@@ -72,36 +75,32 @@ export default {
 }
 
 
-@media (max-width: 500px) {
-  .course {
-    align-items: center;
-  }
-
-  .to-code {
+@media (max-width: 400px) {
+  .code {
     flex-direction: column;
   }
 
   .from-code {
     margin-right: 1em;
-    flex-direction: column;
     align-items: left;
   }
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 200px) {
   .course {
     justify-content: center;
   }
 
-  .to-code {
+
+  .code {
     flex-direction: row;
   }
 
   .from-code {
     margin-right: 0;
-    flex-direction: row;
   }
+
 
   .title {
     display: none;

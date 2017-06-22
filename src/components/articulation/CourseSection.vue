@@ -9,8 +9,12 @@
     <tbody>
       <template v-for="tokenPair of zippedSection">
         <tr>
-          <token :token="tokenPair[0]" :onFromSide="false"/>
-          <token :token="tokenPair[1]" :onFromSide="true"/>
+          <td class="token to-token">
+            <token :token="tokenPair[0]" :onFromSide="false"/>
+          </td>
+          <td class="token">
+            <token :token="tokenPair[1]" :onFromSide="true"/>
+          </td>
         </tr>
       </template>
     </tbody>
@@ -89,10 +93,37 @@ export default {
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  table-layout: fixed;
 }
+
+
+.token {
+  vertical-align: middle;
+}
+
+.to-token {
+  width: 130px;
+}
+
 
 .accessibility-info {
   display: none;
+}
+
+
+@media (max-width: 600px) {
+  .to-token {
+    width: 22.5%;
+    min-width: 115px;
+  }
+}
+
+@media (max-width: 400px) {
+  .to-token {
+    width: 22.5%;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 200px) {
 }
 </style>

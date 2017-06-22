@@ -1,12 +1,12 @@
 <template>
-  <td :class="['token', { 'to-token': !onFromSide }]">
+  <div>
     <course-token :course="token" :onFromSide="onFromSide" v-if="isCourse()"/>
     <non-articulation-token v-else-if="isNonArticulation()"/>
-    <operator-token :operator_="token" v-else-if="isOperator()"/>
+    <operator-token :operator_="token" :onFromSide="onFromSide" v-else-if="isOperator()"/>
     <div class="non-course" v-else-if="isNonCourse()">
       {{ token['non-course'] }}
     </div>
-  </td>
+  </div>
 </template>
 
 <script>
@@ -39,15 +39,6 @@ export default {
 </script>
 
 <style>
-.token {
-  vertical-align: top;
-}
-
-.to-token {
-  width: 130px;
-}
-
-
 .non-course {
   margin-top: 0.25em;
   margin-bottom: 0.25em;

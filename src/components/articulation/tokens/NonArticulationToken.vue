@@ -1,7 +1,7 @@
 <template>
   <div class="non-articulation">
     <div class="non-articulation-large">No Course Articulated</div>
-    <div class="non-articulation-small">N/A</div>
+    <div class="non-articulation-small">No Articulation</div>
   </div>
 </template>
 
@@ -23,11 +23,10 @@ export default {
 
 .non-articulation-small {
   display: none;
-  text-align: center;
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 250px) {
   .non-articulation-large {
     display: none;
   }
