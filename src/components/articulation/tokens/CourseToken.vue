@@ -23,21 +23,21 @@ export default {
 }
 
 .button-box {
-  background-color: #f6f6f6;
+  background-color: #f9f9f9;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.3);
-  box-shadow: 0px 4px 9px -4px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 4px 4px -4px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 4px -4px rgba(0,0,0,0.3);
   cursor: pointer;
 
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .button-box:hover {
-  background-color: #e5e5e5;
+  background-color: #eaeaea;
 
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 
