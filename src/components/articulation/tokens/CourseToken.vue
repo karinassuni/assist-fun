@@ -19,7 +19,7 @@ export default {
 .course {
   display: flex;
   align-items: center;
-  padding: 6px 0.65em 6px 0.65em;
+  padding: 0.5em 0.5em;
 }
 
 .button-box {
@@ -34,7 +34,7 @@ export default {
   transition: background-color 0.2s;
 }
 .button-box:hover {
-  background-color: #eaeaea;
+  background-color: #f0f0f0;
 
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
@@ -52,7 +52,7 @@ export default {
 
 .from-code {
   font-weight: 900;
-  margin-right: 1.25em;
+  margin: 0 1em;
 }
 
 
@@ -62,6 +62,7 @@ export default {
 
 .title {
   font-size: 0.85em;
+  margin-right: 1em;
 }
 
 
@@ -71,7 +72,6 @@ export default {
   }
 
   .from-code {
-    margin-right: 1em;
     align-items: left;
   }
 }

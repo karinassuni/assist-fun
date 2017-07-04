@@ -101,7 +101,7 @@ export default {
 }
 
 .to-token {
-  width: 130px;
+  width: 100px;
   font-size: 0.85em;
   color: #aaa;
 }
@@ -114,15 +114,15 @@ export default {
 
 @media (max-width: 600px) {
   .to-token {
-    width: 22.5%;
-    min-width: 115px;
+    width: 18%;
+    min-width: 95px;
   }
 }
 
 @media (max-width: 400px) {
   .to-token {
-    width: 22.5%;
-    min-width: 70px;
+    width: 18%;
+    min-width: 55px;
   }
 }
 

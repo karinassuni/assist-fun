@@ -40,7 +40,7 @@ export default {
 
 
 .from-side-operator {
-  margin-left: 3.0em;
+  margin-left: calc(3.0em + 1em);
 }
 
 .to-side-operator {

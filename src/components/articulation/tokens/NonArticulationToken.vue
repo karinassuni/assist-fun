@@ -14,6 +14,7 @@ export default {
 <style>
 .non-articulation {
   font-size: 0.85em;
+  margin: 0 1em;
   padding: 6px 0.65em 6px 0.65em;
 }
 
