@@ -5,6 +5,7 @@ but as a responsive web app that helps you optimize your transfer courses.
 ISN'T THAT FUN?
 
 ## Screenshots
+Old VS New:
 ![Old VS New](./screenshots/assist-fun.png?raw=true)
 
 ## Developing
